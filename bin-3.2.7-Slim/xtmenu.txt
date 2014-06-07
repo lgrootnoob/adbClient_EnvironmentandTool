@@ -1,0 +1,46 @@
+_____________________________________________________________________________
+For a root menu type rtmn
+To connect adb wirelessly type cnt
+To disconnect type dcnt
+To ping an ip enter png
+The syntax for calculations is on the next line
+clc 6+7
+Whereas each number is filled with your num of choice
+And it supports the following signs, x - / +
+For screen color enter clr
+type xp to open windows explorer in the current folder
+To get to your work folder no matter where you are just type work
+Busybox binary included
+or type in ex to get a userfriendly extraction
+To install adb type instadb
+for apk menu type apk
+To list drive letters type lsdrv
+For fastboot menu type fbmn
+To turn off auto screen clear type hist
+Adb Sideload = adbsl
+use addpath to add the current folder onto the temporary path variable
+userbin is a place for you to add your own binaries and scripts that you want access to anywhere
+To remove reset autoupdate check option type updatereset
+To update adb deps type upadb
+To check for adbClient updates manually type check
+Adb Pull = adbp or push=adbps
+sysprop = open System properties window
+taskmgr = Open windows task manager
+setpass = Set windows passwords and usernames
+devej = Frontend for ejecting device from pc
+freac = audio converter and manipulater
+freaccmd = command line version of freac
+to use switches please start a new cmd shell first
+instead of /? use help command
+back = to go back to the folder you were just in
+to install strace on a device type strace
+to send command to strace on device type sndtrace
+open goo.im webpage for android files = goo
+bintohex = convert bin file to hex file
+sfk = swiss file knife(Multitool binary like busybox)
+qfx = quick fixes menu(Lost homescreen, Busybox installer, sqlite3 installer)
+dmsg = dmesg
+dmsgnp = dmesg capture output in text file, and display in notepad
+rmnt = Allows you to remount partitions as read-write or read-only
+busybox = busybox
+______________________________________________________________________________

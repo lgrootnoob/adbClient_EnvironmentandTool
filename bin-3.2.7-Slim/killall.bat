@@ -1,0 +1,4 @@
+@echo off
+set "bboxkill=busybox killall"
+%bboxkill% %1 %2 %3 %4 %5 %6 %7 %8
+goto :EOF

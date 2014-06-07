@@ -1,0 +1,8 @@
+open jacobs-elec.chickenkiller.com
+anon
+cd adbfls
+get adb.exe
+get AdbWinApi.dll
+get AdbWinUsbApi.dll
+get fastboot.exe
+quit

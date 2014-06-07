@@ -1,0 +1,12 @@
+ftp> open 192.168.1.105
+Connected to 192.168.1.105.
+220 Serv-U FTP Server v15.0 ready...
+User (192.168.1.105:(none)): 
+230 User logged in.
+ftp> get ver.txt
+200 PORT command successful.
+150 Opening BINARY mode data connection for ver.txt (3 Bytes).
+226 Transfer complete. 3 bytes transferred. 0.00 KB/sec.
+ftp: 3 bytes received in 0.00Seconds 3000.00Kbytes/sec.
+ftp> quit
+221 Goodbye, closing session.
