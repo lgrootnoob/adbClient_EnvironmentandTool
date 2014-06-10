@@ -1,4 +1,8 @@
 _____________________________________________________________________________
+get description and syntax of a command = help command
+whereas command is replaced with the command that you are looking for the syntax of
+As follows for the ls command:
+help ls
 apk manipulation menu = apk
 For a root menu type rtmn
 To connect adb wirelessly type cnt

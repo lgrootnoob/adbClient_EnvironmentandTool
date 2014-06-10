@@ -1,6 +1,8 @@
 @echo off
 echo.
-echo These root methods require the Control-c Keyboard combo when they stall for more than 10 seconds.
+echo Make sure you have the proper drivers installed and your device shows up under List of Devices Attached
+adb wait-for-device
+echo These root methods require the Control-c Keyboard combo shall they stall for more than 10 seconds.
 set "strt="
 set "ebgnbdvrg=./data/local/tmp/busybox mount -o remount,rw /system"
 set "adsafasfa=chmod 755 /data/local/tmp/busybox"
