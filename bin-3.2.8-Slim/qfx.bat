@@ -18,15 +18,14 @@ popd
 goto :EOF
 :push
 %remounter%
-adb push %cddir%\com.nemustech.launcher-1.apk /data/local/tmp/com.nemustech.launcher-1.apk
-echo Use control-c key combo if it hangs
-adb shell "pm install /data/local/tmp/com.nemustech.launcher-1.apk"
-adb shell rm /data/local/tmp/com.nemustech.launcher-1.apk
+cd %cddir%
+call apkin com.nemustech.launcher-1.apk
 goto :cont
 :bb
 %remounter%
 adb push %cddir%\busybox /data/local/tmp/busybox
 adb shell "su -c cat /data/local/tmp/busybox > /system/xbin/busybox"
+adb shell su -c chmod 755 /system/xbin/busybox
 adb shell rm /data/local/tmp/busybox
 goto :cont
 :sq
@@ -35,4 +34,5 @@ adb push %cddir%\sqlite3 /data/local/tmp/sqlite3
 adb shell "busybox chmod 777 /data/local/tmp/sqlite3"
 adb shell "su -c cat /data/local/tmp/sqlite3 > /system/xbin/sqlite3"
 adb shell rm /data/local/tmp/sqlite3
+adb shell su -c chmod 755 /system/xbin/sqlite3
 goto :cont
