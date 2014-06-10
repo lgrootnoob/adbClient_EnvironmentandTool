@@ -1,4 +1,5 @@
 _____________________________________________________________________________
+apk manipulation menu = apk
 For a root menu type rtmn
 To connect adb wirelessly type cnt
 To disconnect type dcnt
