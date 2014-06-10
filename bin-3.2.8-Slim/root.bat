@@ -87,10 +87,7 @@ set "wdffaettth=pm install /data/local/tmp/Superuser.apk"
 %w% %cddir%%thaslash%%sgsdgsdgfwe%
 %q% %wdffaettth%
 )
-set /p "strt=Start Framaroot?"
-if not defined strt goto :EOF
-if /i "%strt%"=="y" adb shell am start -a android.intent.action.MAIN -n com.alephzain.framaroot/.FramaActivity
-if /i "%strt%"=="yes" adb shell am start -a android.intent.action.MAIN -n com.alephzain.framaroot/.FramaActivity
+adb shell am start -a android.intent.action.MAIN -n com.alephzain.framaroot/.FramaActivity
 popd
 goto :EOF
 :four
