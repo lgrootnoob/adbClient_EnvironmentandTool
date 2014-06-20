@@ -3,7 +3,7 @@ set "shellcont="
 echo Enter command to send to device
 echo Enter nothing to go back
 set /p "shellcont=Command $~:
-if not defined shellcont goto :doneloop
+if not defined shellcont goto :EOF
 set "adbshell=adb shell"
 %adbshell% %shellcont% | more
 set adbshell=
