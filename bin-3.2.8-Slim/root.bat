@@ -20,9 +20,11 @@ echo.
 echo If none of these exploits works, you can try srsroot,search for cydiaimpactor, cydiaimpactor will work on 4.3 or newer I believe, or make a thread on XDA.
 echo Table:
 echo ___________________________________________________________________
-echo Android 2.1-2.3: 1=psneuter 2=zergRush
-echo Android 2.1+: 3=Framaroot(Application that has lots of exploits)
-echo 4=Exynosabuse(A specific exploit application that targets Devices that run the Exynos processor)
+echo Android 2.1-2.3: 1 = psneuter 2 = zergRush
+echo Android 2.1+: 3 = Framaroot(Application that has lots of exploits)
+echo 4 = Exynosabuse(A specific exploit application that targets Devices that run the Exynos processor)
+echo 5 = MotoRazr root link
+echo 6 = towel root
 echo ____________________________________________________________________________________
 if not "%1"=="" (set xplt=%1)&(goto :paramskip)
 set /p "xplt=Method?"
@@ -46,10 +48,29 @@ goto :three
 ) 
 if "%xplt%"=="4" (
 goto :four
+)
+if "%xplt%"=="5" (
+goto :five
+)
+if "%xplt%"=="6" (
+goto :six
 ) ELSE (
 popd
 goto :EOF
 )
+:five
+call start iexplore http://wiki.cyanogenmod.org/w/Template:Root_razrblade
+call start firefox http://wiki.cyanogenmod.org/w/Template:Root_razrblade
+call start chrome http://wiki.cyanogenmod.org/w/Template:Root_razrblade
+popd
+goto :EOF
+:six
+adb push tr.apk /data/local/tmp/tr.apk
+adb shell pm install /data/local/tmp/tr.apk
+adb shell rm /data/local/tmp/tr.apk
+echo Towel root installed!
+popd
+goto :EOF
 :snd
 %w% %cddir%%thaslash%%nm% %alte%%nm%
 %q% %r% %alte%%nm%
