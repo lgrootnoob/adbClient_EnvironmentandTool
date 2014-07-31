@@ -59,9 +59,7 @@ popd
 goto :EOF
 )
 :five
-call start iexplore http://wiki.cyanogenmod.org/w/Template:Root_razrblade
-call start firefox http://wiki.cyanogenmod.org/w/Template:Root_razrblade
-call start chrome http://wiki.cyanogenmod.org/w/Template:Root_razrblade
+call "" "http://wiki.cyanogenmod.org/w/Template:Root_razrblade"
 popd
 goto :EOF
 :six
