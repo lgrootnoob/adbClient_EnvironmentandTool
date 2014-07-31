@@ -59,7 +59,7 @@ popd
 goto :EOF
 )
 :five
-call "" "http://wiki.cyanogenmod.org/w/Template:Root_razrblade"
+call start "" "http://wiki.cyanogenmod.org/w/Template:Root_razrblade"
 popd
 goto :EOF
 :six
