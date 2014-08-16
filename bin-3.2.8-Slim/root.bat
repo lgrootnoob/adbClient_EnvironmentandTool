@@ -73,6 +73,7 @@ goto :EOF
 %w% %cddir%%thaslash%%nm% %alte%%nm%
 %q% %r% %alte%%nm%
 %q% %t%%alte%%nm%
+busybox sleep 3
 %w% %cddir%%thaslash%%agsdgsafg%
 %q% %adsafasfa%
 %q% %ebgnbdvrg%
