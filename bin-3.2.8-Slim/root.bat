@@ -15,7 +15,6 @@ set "xplt="
 echo Enter Nothing To go back!
 echo Enter the number associated with your root method
 echo For 4.x android users you might have to turn off verify apps installed over adb
-echo Does not support 4.3 or newer
 echo.
 echo If none of these exploits works, you can try srsroot,search for cydiaimpactor, cydiaimpactor will work on 4.3 or newer I believe, or make a thread on XDA.
 echo Table:
@@ -64,9 +63,10 @@ popd
 goto :EOF
 :six
 adb push tr.apk /data/local/tmp/tr.apk
-adb shell pm install /data/local/tmp/tr.apk
+adb shell pm install -r /data/local/tmp/tr.apk
 adb shell rm /data/local/tmp/tr.apk
 echo Towel root installed!
+adb shell am start -a android.intent.action.MAIN -n com.alephzain.framaroot/.FramaActivity
 popd
 goto :EOF
 :snd
