@@ -66,7 +66,8 @@ adb push tr.apk /data/local/tmp/tr.apk
 adb shell pm install -r /data/local/tmp/tr.apk
 adb shell rm /data/local/tmp/tr.apk
 echo Towel root installed!
-adb shell am start -a android.intent.action.MAIN -n com.alephzain.framaroot/.FramaActivity
+rem adb shell am start -a android.intent.action.MAIN -n com.geohot.towelroot/.Towelroot
+echo Run the towelroot app on your phone now.
 popd
 goto :EOF
 :snd
