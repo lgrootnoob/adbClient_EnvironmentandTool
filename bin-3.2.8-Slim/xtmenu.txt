@@ -48,4 +48,5 @@ dmsg = dmesg
 dmsgnp = dmesg capture output in text file, and display in notepad
 rmnt = Allows you to remount partitions as read-write or read-only
 busybox = busybox
+exec = push then run shell script on android. syntax: exec script.sh
 ______________________________________________________________________________
