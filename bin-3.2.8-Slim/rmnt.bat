@@ -18,7 +18,7 @@ echo __________________
 set "ebox="
 set /p ebox=Remount Option?
 if not defined ebox goto :EOF
-set "bbox=adb shell busybox mount -o remount,"
+set "bbox=adb shell su -c busybox mount -o remount,"
 echo Remounting....
 %bbox%%ebox% %prt%
 echo Remount Finished.
