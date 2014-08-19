@@ -22,8 +22,9 @@ echo ___________________________________________________________________
 echo Android 2.1-2.3: 1 = psneuter 2 = zergRush
 echo Android 2.1+: 3 = Framaroot(Application that has lots of exploits)
 echo 4 = Exynosabuse(A specific exploit application that targets Devices that run the Exynos processor)
-echo 5 = MotoRazr root link
+echo 5 = MotoRazr root link 
 echo 6 = towel root
+echo 7 = Stump root for lg g3 and friends. Why not try it?
 echo ____________________________________________________________________________________
 if not "%1"=="" (set xplt=%1)&(goto :paramskip)
 set /p "xplt=Method?"
@@ -53,12 +54,24 @@ goto :five
 )
 if "%xplt%"=="6" (
 goto :six
+)
+if "%xplt%"=="7" (
+goto :seven
 ) ELSE (
 popd
 goto :EOF
 )
 :five
 call start "" "http://wiki.cyanogenmod.org/w/Template:Root_razrblade"
+popd
+goto :EOF
+:seven
+adb push stump.apk /data/local/tmp/stump.apk
+adb shell pm install -r /data/local/tmp/stump.apk
+adb shell rm /data/local/tmp/stump.apk
+echo Stump Root installed!
+rem adb shell am start -a android.intent.action.MAIN -n com.geohot.towelroot/.Towelroot
+echo Run the Stump Root app on your phone now.
 popd
 goto :EOF
 :six
